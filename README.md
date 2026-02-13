@@ -15,11 +15,6 @@
 - **Customizable UI**: Dark theme designed for comfortable reading.
 - **Simple Source Switching**: Easily change the news source via a dedicated settings form.
 
-## 🖼️ Screenshots
-
-*(Consider adding screenshots here showing the main window, the news list, and the article details view.  
-To add a screenshot, upload an image to your repo and use: `![Main Window](screenshots/main.png)`)*
-
 ## 🚀 How It Works
 
 1.  The application sends an HTTP request to the selected news category URL.
@@ -35,42 +30,7 @@ To add a screenshot, upload an image to your repo and use: `![Main Window](scree
 - **Parsing:** [HtmlAgilityPack](https://html-agility-pack.net/)
 - **HTTP Client:** `System.Net.Http.HttpClient`
 
-## 📦 Getting Started
-
-### Prerequisites
-- Windows OS
-- [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework) (Version 4.7.2 or higher recommended)
-- Visual Studio (or any C# IDE)
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/YOUR_USERNAME/NewsParser.git
-    ```
-2.  **Open the solution** (`NewsParser.sln`) in Visual Studio.
-3.  **Restore NuGet Packages:** If HtmlAgilityPack is not installed, open the NuGet Package Manager Console and run:
-    ```bash
-    Install-Package HtmlAgilityPack
-    ```
-4.  **Build** the solution (Ctrl+Shift+B).
-5.  **Run** the application (F5).
-
-## 🧩 Project Structure
-
-- **`MainForm.cs`**: The main window containing the category buttons and the news panel.
-- **`SettingsForm.cs`**: A pop-up window to switch between different news sources (Russia/Belarus).
-- **`NewsDetailsForm.cs` / `NewsDetailsFormRB.cs`**: Windows that display the full content of a selected news article.
-
 ## ⚠️ Note on Web Scraping
 
 - This application relies on the current HTML structure of `ria.ru` and `belta.by`. If these websites update their layout, the parser may break and require updates to the XPath selectors.
 - The project is intended for **educational purposes**. Always respect the `robots.txt` and terms of service of the websites you scrape.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-Project Link: [https://github.com/YOUR_USERNAME/NewsParser](https://github.com/YOUR_USERNAME/NewsParser)
